@@ -1,0 +1,10 @@
+{
+  "name": "Profil API",
+  "version": "0.1.0",
+  "description": "API ini masih dalam tahap pengembangan.",
+  "title": "Profil API",
+  "url": "http://profile.bangunbanten.com/api/v1",
+  "template": {
+    "withCompare": false
+  }
+}

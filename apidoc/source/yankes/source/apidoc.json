@@ -1,0 +1,10 @@
+{
+  "name": "Layanan Kesehatan API",
+  "version": "0.1.0",
+  "description": "API ini masih dalam tahap pengembangan.",
+  "title": "Layanan Kesehatan API",
+  "url": "http://yankes-01.dev.bantenprov.go.id/api/v1",
+  "template": {
+    "withCompare": false
+  }
+}
