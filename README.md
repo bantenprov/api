@@ -8,4 +8,7 @@ Dapat dipergunakan untuk berinteraksi dengan aplikasi yang ada di pemerinta prov
 2. [Dashboard API](http://api-01.dev.bantenprov.go.id/docs/dashboard)
 3. Yankes API
 4. Simpeg API
-
+5. Simbada API
+6. SOP Online API
+7. Simpeg API
+8. Otorisasi API
