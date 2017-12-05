@@ -12,3 +12,4 @@ Dapat dipergunakan untuk berinteraksi dengan aplikasi yang ada di pemerinta prov
 6. SOP Online API
 7. Simpeg API
 8. Otorisasi API
+9. Satudata API
