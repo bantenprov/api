@@ -19,6 +19,6 @@ Dapat dipergunakan untuk berinteraksi dengan aplikasi yang ada di pemerinta prov
 ## Kode
 Struktur penulisan kode yang digunakan untuk membuat dokumentasi API adalah menggunakan [apidoc](http://apidocjs.com/).
 sebagaimana terlihat sebagai berikut:
-![struktur kode dokumentasi api](../images/struktur-kode-dokimentasi-api-aplikasi.png)
+[![struktur kode dokumentasi api](../images/struktur-kode-dokimentasi-api-aplikasi.png)](../images/struktur-kode-dokimentasi-api-aplikasi.png)
 
 ## Template
