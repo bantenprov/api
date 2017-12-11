@@ -23,7 +23,7 @@ sebagaimana terlihat sebagai berikut:
 
 Pada tiap - tiap aplikasi dokumentasi api nya harus mengikuti struktur berikut ini:
 
-[![Struktur folder dokumentasi api pada aplikasi](/struktur-folder-dokumentasi-api-pada-aplikasi.png)](/struktur-folder-dokumentasi-api-pada-aplikasi.png).
+[![Struktur folder dokumentasi api pada aplikasi](/images/struktur-folder-dokumentasi-api-pada-aplikasi.png)](/images/struktur-folder-dokumentasi-api-pada-aplikasi.png).
 1. souce
 2. template
 
