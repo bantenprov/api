@@ -3,7 +3,7 @@ Dokumentasi API Pemerintah Provinsi Banten
 
 Dapat dipergunakan untuk berinteraksi dengan aplikasi yang ada di pemerinta provinsi Banten, untuk dapat mengakses terlebih dahulu harus mendapatkan API KEY (akan di publikasikan kemudian...).
 
-# Dokumentasi API yang tersedia
+## Dokumentasi API yang tersedia
 1. [Profil API](http://api-01.dev.bantenprov.go.id/docs/profil)
 2. [Dashboard API](http://api-01.dev.bantenprov.go.id/docs/dashboard)
 3. Yankes API
@@ -13,3 +13,12 @@ Dapat dipergunakan untuk berinteraksi dengan aplikasi yang ada di pemerinta prov
 7. Simpeg API
 8. Otorisasi API
 9. Satudata API
+
+## Petunjuk pelunisan dokuentasi API
+
+## Kode
+Struktur penulisan kode yang digunakan untuk membuat dokumentasi API adalah menggunakan [apidoc](http://apidocjs.com/).
+sebagaimana terlihat sebagai berikut:
+![struktur kode dokumentasi api](../images/struktur-kode-dokimentasi-api-aplikasi.png)
+
+## Template
