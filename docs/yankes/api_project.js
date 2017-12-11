@@ -1,9 +1,9 @@
 define({
-  "name": "Layanan Kesehatan API",
+  "name": "API Yankes v1",
   "version": "0.1.0",
   "description": "API ini masih dalam tahap pengembangan.",
-  "title": "Layanan Kesehatan API",
-  "url": "http://yankes-01.dev.bantenprov.go.id/api/v1",
+  "title": "Yankes API",
+  "url": "http://yankes-01.dev.bantenprov.com/api/v1",
   "template": {
     "withCompare": false
   },
@@ -12,7 +12,7 @@ define({
   "apidoc": "0.3.0",
   "generator": {
     "name": "apidoc",
-    "time": "2017-12-05T09:55:53.282Z",
+    "time": "2017-12-11T07:37:02.394Z",
     "url": "http://apidocjs.com",
     "version": "0.17.6"
   }
