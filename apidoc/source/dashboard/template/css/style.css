@@ -22,7 +22,7 @@ td.code {
 #content {
   padding: 0;
   z-Index: -1;
-  margin-left: 250px;
+  margin-left: 280px;
 }
 #content.content-hide {
   display: none;
@@ -293,7 +293,7 @@ pre code.sample-request-response-json {
  * ------------------------------------------------------------------------------------------ */
 
 .sidenav {
-  width: 250px;
+  width: 280px;
   margin: 0;
   padding: 1rem 0;
   position: fixed;
@@ -362,7 +362,7 @@ pre code.sample-request-response-json {
  * ------------------------------------------------------------------------------------------ */
 
 .sidenav-search {
-  width: 250px;
+  width: 280px;
   left: 0px;
   position: fixed;
   padding: 16px;
