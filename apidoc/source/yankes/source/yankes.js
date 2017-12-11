@@ -6,12 +6,12 @@
 */
 
 /**
-* @api {get} http://yankes-01.dev.bantenprov.go.id/api/v1/dokter/:id Get   Detail Dokter
+* @api {get} /dokter/:id Get   Detail Dokter
 * @apiName GetDokter
-* @apiGroup Dokter 
+* @apiGroup Dokter
 *
 * @apiParam {Number} id Dokter unique ID.
-* 
+*
 *
 * @apiSuccess {Array} result Server response data.
 *
@@ -59,7 +59,7 @@
 */
 
 /**
-* @api {get} http://yankes-01.dev.bantenprov.go.id/api/v1/dokter Data Dokter
+* @api {get} /dokter Data Dokter
 * @apiName getAllDokter
 * @apiGroup Dokter
 * @apiSuccess {Array} result Server response data.
@@ -129,10 +129,10 @@
 *        }
 *    },
 *    "links": {
-*        "self": "http://yankes-01.dev.bantenprov.go.id/api/v1/dokter?page=1",
-*        "first": "http://yankes-01.dev.bantenprov.go.id/api/v1/dokter?page=1",
-*        "next": "http://yankes-01.dev.bantenprov.go.id/api/v1/dokter?page=2",
-*        "last": "http://yankes-01.dev.bantenprov.go.id/api/v1/dokter?page=3"
+*        "self": "/dokter?page=1",
+*        "first": "/dokter?page=1",
+*        "next": "/dokter?page=2",
+*        "last": "/dokter?page=3"
 *   }
 *}
 *
@@ -141,12 +141,12 @@
 
 
 /**
-* @api {get} http://yankes-01.dev.bantenprov.go.id/api/v1/faskes/:id Get   Detail Rumah Sakit
+* @api {get} /faskes/:id Get   Detail Rumah Sakit
 * @apiName GetRumahsakit
-* @apiGroup Rumah Sakit 
+* @apiGroup Rumah Sakit
 *
 * @apiParam {Number} id Rumah Sakit unique ID.
-* 
+*
 *
 * @apiSuccess {Array} result Server response data.
 *
@@ -187,7 +187,7 @@
 */
 
 /**
-* @api {get} http://yankes-01.dev.bantenprov.go.id/api/v1/faskes Data Rumah Sakit
+* @api {get} /faskes Data Rumah Sakit
 * @apiName getAllRumahsakit
 * @apiGroup Rumah Sakit
 * @apiSuccess {Array} result Server response data.
@@ -243,10 +243,10 @@
 *        }
 *    },
 *    "links": {
-*        "self": "http://yankes-01.dev.bantenprov.go.id/api/v1/faskes?page=1",
-*        "first": "http://yankes-01.dev.bantenprov.go.id/api/v1/faskes?page=1",
-*        "next": "http://yankes-01.dev.bantenprov.go.id/api/v1/faskes?page=2",
-*        "last": "http://yankes-01.dev.bantenprov.go.id/api/v1/faskes?page=2"
+*        "self": "/faskes?page=1",
+*        "first": "/faskes?page=1",
+*        "next": "/faskes?page=2",
+*        "last": "/faskes?page=2"
 *   }
 *}
 *
@@ -254,12 +254,12 @@
 
 
 /**
-* @api {get} http://yankes-01.dev.bantenprov.go.id/api/v1/kamar/:id Get   Detail Kamar Inap
+* @api {get} /kamar/:id Get   Detail Kamar Inap
 * @apiName GetKamarInap
-* @apiGroup Kamar Inap 
+* @apiGroup Kamar Inap
 *
 * @apiParam {Number} id Rumah Sakit unique ID.
-* 
+*
 *
 * @apiSuccess {Array} result Server response data.
 *
@@ -391,7 +391,7 @@
 */
 
 /**
-* @api {get} http://yankes-01.dev.bantenprov.go.id/api/v1/kamar Data Rumah Sakit
+* @api {get} /kamar Data Rumah Sakit
 * @apiName getAllKamarInap
 * @apiGroup Kamar Inap
 * @apiSuccess {Array} result Server response data.
@@ -520,10 +520,10 @@
 *        }
 *    },
 *    "links": {
-*        "self": "http://yankes-01.dev.bantenprov.go.id/api/v1/kamar?page=1",
-*        "first": "http://yankes-01.dev.bantenprov.go.id/api/v1/kamar?page=1",
-*        "next": "http://yankes-01.dev.bantenprov.go.id/api/v1/kamar?page=2",
-*        "last": "http://yankes-01.dev.bantenprov.go.id/api/v1/kamar?page=2"
+*        "self": "/kamar?page=1",
+*        "first": "/kamar?page=1",
+*        "next": "/kamar?page=2",
+*        "last": "/kamar?page=2"
 *    }
 *}
 *
@@ -531,7 +531,7 @@
 
 
 /**
-* @api {get} http://yankes-01.dev.bantenprov.go.id/api/v1/yankes Get Yankes
+* @api {get} /yankes Get Yankes
 * @apiName GetYankes
 * @apiGroup Yankes
 *
