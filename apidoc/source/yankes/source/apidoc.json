@@ -5,6 +5,6 @@
   "title": "Yankes API",
   "url": "http://yankes-01.dev.bantenprov.com/api/v1",
   "template": {
-    "withCompare": false,
+    "withCompare": false
   }
 }
