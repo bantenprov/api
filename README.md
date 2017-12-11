@@ -14,11 +14,20 @@ Dapat dipergunakan untuk berinteraksi dengan aplikasi yang ada di pemerinta prov
 8. Otorisasi API
 9. Satudata API
 
-## Petunjuk pelunisan dokuentasi API
+## Petunjuk penulisan dokumentasi API
 
 ## Kode
 Struktur penulisan kode yang digunakan untuk membuat dokumentasi API adalah menggunakan [apidoc](http://apidocjs.com/).
 sebagaimana terlihat sebagai berikut:
-[![struktur kode dokumentasi api](/images/struktur-kode-dokimentasi-api-aplikasi.png)](/images/struktur-kode-dokimentasi-api-aplikasi.png)
+[![struktur kode dokumentasi api](/images/struktur-kode-dokimentasi-api-aplikasi.png)](/images/struktur-kode-dokimentasi-api-aplikasi.png).
 
-## Template
+Pada tiap - tiap aplikasi dokumentasi api nya harus mengikuti struktur berikut ini:
+
+[![Struktur folder dokumentasi api pada aplikasi](/images/struktur-folder-dokumentasi-api-pada-aplikasi.png)](/images/struktur-folder-dokumentasi-api-pada-aplikasi.png).
+1. souce
+2. template
+
+### source
+
+### template
+
