@@ -3,7 +3,8 @@
  * ------------------------------------------------------------------------------------------ */
 
 body {
-  background-color: #f5f5f5;
+  padding-top: 51px;
+  background-color: #f2f2f2;
 }
 
 body, p, a, div, th, td {
@@ -31,26 +32,43 @@ td.code {
   position: relative;
   padding: 20px;
   padding-top: 28px;
-  margin: 0 20px;
+  margin: 20px;
   background-color: #fff;
   border: 1px solid #ddd;
-  border-top: 0;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+  border-top: 8px solid #2485d8;
+}
+#content #project::before, #content #project::after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+#content #project::after {
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
 }
 #content #project h1 {
-  color: #3f51b5;
+  color: #0f61a8;
 }
-#content #project::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  content: "";
-  height: 8px;
-  background-color: #7986cb;
-}
+
 /*#content #header,*/
 #content #sections,
 /*#content #footer,*/
@@ -289,21 +307,25 @@ pre code.sample-request-response-json {
 }
 
 /* ------------------------------------------------------------------------------------------
- * Sidenav
+ * Sidenav and navbar
  * ------------------------------------------------------------------------------------------ */
+
+.navbar-inverse {
+  background-color: #222426;
+  border-color: #34373a;
+}
 
 .sidenav {
   width: 280px;
   margin: 0;
   padding: 1rem 0;
   position: fixed;
-  top: 56px;
+  top: 110px;
   left: 0;
   bottom: 0;
   overflow-x: hidden;
   overflow-y: auto;
   background-color: #222426;
-  border-right: 1px solid #ddd;
   z-index: 10;
 }
 
@@ -345,7 +367,7 @@ pre code.sample-request-response-json {
 .sidenav > li.active > a {
     position: relative;
     z-index: 2;
-    background-color: #7986cb;
+    background-color: #2485d8;
     color: #ffffff;
 }
 
@@ -366,9 +388,8 @@ pre code.sample-request-response-json {
   left: 0px;
   position: fixed;
   padding: 16px;
-  background-color: #3f51b5;
-  border-right: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  background-color: #222426;
+  border-bottom: 1px solid #34373a;
   z-index: 11;
 }
 
@@ -637,6 +658,12 @@ p.deprecated span{
     position: relative;
     top: 0;
     width: 100%;
+  }
+  #sidenav .sidenav {
+    border: 1px solid #222426;
+  }
+  #sidenav .sidenav-search {
+    border: 1px solid #34373a;
   }
   #sidenav .sidenav-search {
     border-top-right-radius: 4px;
