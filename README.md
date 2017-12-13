@@ -1,33 +1,54 @@
 # Bantenprov API
-Dokumentasi API Pemerintah Provinsi Banten
 
-Dapat dipergunakan untuk berinteraksi dengan aplikasi yang ada di pemerinta provinsi Banten, untuk dapat mengakses terlebih dahulu harus mendapatkan API KEY (akan di publikasikan kemudian...).
+Dokumentasi API Pemerintah Provinsi Banten.
 
-## Dokumentasi API yang tersedia
+## API yang tersedia
+
 1. [Profil API](http://api-01.dev.bantenprov.go.id/docs/profil)
 2. [Dashboard API](http://api-01.dev.bantenprov.go.id/docs/dashboard)
-3. Yankes API
-4. Simpeg API
-5. Simbada API
-6. SOP Online API
-7. Simpeg API
-8. Otorisasi API
-9. Satudata API
+3. [Yankes API](http://api-01.dev.bantenprov.go.id/docs/yankes)
+4. [Simpeg API](http://api-01.dev.bantenprov.go.id/docs/simpeg)
+5. [Simbada API](http://api-01.dev.bantenprov.go.id/docs/simbada)
+6. [SOP Online API](http://api-01.dev.bantenprov.go.id/docs/sop-online)
+7. [Otorisasi API](http://api-01.dev.bantenprov.go.id/docs/otorisasi)
+8. [Satu Data API](http://api-01.dev.bantenprov.go.id/docs/satu-data)
+
+## Penyiapan alat
+
+Untuk dapat menggunakan *build system*, Anda membutuhkan kode sumber dan Node. Ikuti langkah-langkah di bawah ini:
+
+1. [Download kode sumber.](https://github.com/bantenprov/api/archive/master.zip)
+   - Atau clone: `git clone https://github.com/bantenprov/api.git`.
+2. [Download dan install Node](https://nodejs.org/download), yang digunakan untuk manajemen dependensi.
+3. Arahkan ke direktori root `/api` dan jalankan perintah `npm install` untuk instalasi dependensi yang sudah terdaftar di dalam berkas [package.json](/package.json).
+
+Setelah selesai, Anda dapat menjalankan berbagai perintah yang disediakan dari *command line*.
+
+## Menggunakan NPM scripts
+
+[package.json](/package.json) meliputi *commands* dan *tasks* berikut:
+
+| Task | Description |
+| --- | --- |
+| `npm run build` | Untuk menjalankan pengujian dan kompilasi. |
+| `npm run test` | Untuk menjalankan pengujian. |
+
+## Struktur
+
+```plaintext
+api/
+├── dist/
+│   └── docs/                   # Hasil build dari `source/`
+└── source/                     # Sumber API dan template
+    └── <api-name>              # Nama (tiap-tiap) direktori API
+        ├── api-src             # Sumber API
+        │   ├── apidoc.json     # Konfigurasi API
+        │   └── <api-name>.js   # Data API
+        └── template            # Sumber template
+```
 
 ## Petunjuk penulisan dokumentasi API
 
-## Kode
-Struktur penulisan kode yang digunakan untuk membuat dokumentasi API adalah menggunakan [apidoc](http://apidocjs.com/).
-sebagaimana terlihat sebagai berikut:
-[![struktur kode dokumentasi api](/images/struktur-kode-dokimentasi-api-aplikasi.png)](/images/struktur-kode-dokimentasi-api-aplikasi.png).
+Tulis data API di dalam berkas `api-src/<api-name>.js` dan konfigurasi API di dalam berkas `api-src/apidoc.json`. Silakan pelajari dari dokumentasi API yang sudah ada.
 
-Pada tiap - tiap aplikasi dokumentasi api nya harus mengikuti struktur berikut ini:
-
-[![Struktur folder dokumentasi api pada aplikasi](/images/struktur-folder-dokumentasi-api-pada-aplikasi.png)](/images/struktur-folder-dokumentasi-api-pada-aplikasi.png).
-1. souce
-2. template
-
-### source
-
-### template
-
+Dokumentasi API ini menggunakan **APIDOC**, silakan pelajari bagaimana menulis dokumentasi API menggunakan **APIDOC** di <http://apidocjs.com>.

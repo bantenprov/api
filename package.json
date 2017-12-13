@@ -1,0 +1,77 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "API Pemerintahan Provinsi Banten.",
+  "author": "Provinsi Banten",
+  "license": "MIT",
+  "preferGlobal": true,
+  "main": "./lib/index.js",
+  "homepage": "http://api.bantenprov.go.id",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bantenprov/api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bantenprov/api/issues"
+  },
+  "scripts": {
+    "test": "npm run jshint",
+    "jshint": "jshint lib/",
+    "build-dashboard": "apidoc -i source/dashboard/api-src -o dist/docs/dashboard -t source/dashboard/template",
+    "build-profil": "apidoc -i source/profil/api-src -o dist/docs/profil -t source/profil/template",
+    "build-yankes": "apidoc -i source/yankes/api-src -o dist/docs/yankes -t source/yankes/template",
+    "build-satu-data": "apidoc -i source/satu-data/api-src -o dist/docs/satu-data -t source/satu-data/template",
+    "build-index": "copyfiles -f source/index.html dist/docs",
+    "build": "npm-run-all test build-dashboard build-profil build-yankes build-satu-data build-index",
+    "update-lodash": "./node_modules/lodash-cli/bin/lodash -p -o template/vendor/lodash.custom.min.js include=groupBy,each,extend,some exports=amd"
+  },
+  "keywords": [
+    "bantenprov",
+    "api",
+    "apidoc",
+    "doc",
+    "documentation"
+  ],
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "dependencies": {
+    "apidoc-core": "~0.8.3",
+    "fs-extra": "~5.0.0",
+    "lodash": "~4.17.4",
+    "markdown-it": "^8.4.0",
+    "nomnom": "~1.8.1",
+    "winston": "~2.4.0"
+  },
+  "devDependencies": {
+    "apidoc-example": "*",
+    "copyfiles": "^1.2.0",
+    "jshint": "^2.9.5",
+    "lodash-cli": "^4.17.4",
+    "mocha": "~4.0.1",
+    "npm-run-all": "^4.1.2",
+    "path-to-regexp": "^2.1.0",
+    "semver": "^5.4.1",
+    "should": "~13.1.3",
+    "webfontloader": "^1.6.28"
+  },
+  "jshintConfig": {
+    "camelcase": true,
+    "curly": false,
+    "eqeqeq": true,
+    "forin": true,
+    "latedef": false,
+    "newcap": true,
+    "undef": true,
+    "unused": true,
+    "trailing": true,
+    "node": true,
+    "browser": true,
+    "predef": [
+      "it",
+      "describe",
+      "before",
+      "after"
+    ]
+  }
+}
