@@ -7,7 +7,7 @@ Dokumentasi API Pemerintah Provinsi Banten.
 1. [Profil API](http://api-01.dev.bantenprov.go.id/docs/profil)
 2. [Dashboard API](http://api-01.dev.bantenprov.go.id/docs/dashboard)
 3. [Yankes API](http://api-01.dev.bantenprov.go.id/docs/yankes)
-4. [Simpeg API](http://api-01.dev.bantenprov.go.id/docs/simpeg)
+[//]: # (4. [Simpeg API](http://api-01.dev.bantenprov.go.id/docs/simpeg))
 5. [Simbada API](http://api-01.dev.bantenprov.go.id/docs/simbada)
 6. [SOP Online API](http://api-01.dev.bantenprov.go.id/docs/sop-online)
 7. [Otorisasi API](http://api-01.dev.bantenprov.go.id/docs/otorisasi)
