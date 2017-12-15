@@ -4,22 +4,24 @@ Dokumentasi API Pemerintah Provinsi Banten.
 
 ## API yang tersedia
 
-1. [Profil API](http://api-01.dev.bantenprov.go.id/docs/profil)
-2. [Dashboard API](http://api-01.dev.bantenprov.go.id/docs/dashboard)
-3. [Yankes API](http://api-01.dev.bantenprov.go.id/docs/yankes)
+[profil-api]: http://api-01.dev.bantenprov.go.id/docs/profil
+[dashboard-api]: http://api-01.dev.bantenprov.go.id/docs/dashboard
+[yankes-api]: http://api-01.dev.bantenprov.go.id/docs/yankes
+[simpeg-api]: http://api-01.dev.bantenprov.go.id/docs/simpeg
+[simbada-api]: http://api-01.dev.bantenprov.go.id/docs/simbada
+[sop-online-api]: http://api-01.dev.bantenprov.go.id/docs/sop-online
+[otorisasi-api]: http://api-01.dev.bantenprov.go.id/docs/otorisasi
+[satu-data-api]: http://api-01.dev.bantenprov.go.id/docs/satu-data
+
+1. [Profil API][profil-api]
+2. [Dashboard API][dashboard-api]
+3. [Yankes API][yankes-api]
 4. Simpeg API
 5. Simbada API
 6. SOP Online API
 7. Otorisasi API
 8. Satu Data API
 
-<!--
-4. [Simpeg API](http://api-01.dev.bantenprov.go.id/docs/simpeg))
-5. [Simbada API](http://api-01.dev.bantenprov.go.id/docs/simbada)
-6. [SOP Online API](http://api-01.dev.bantenprov.go.id/docs/sop-online)
-7. [Otorisasi API](http://api-01.dev.bantenprov.go.id/docs/otorisasi)
-8. [Satu Data API](http://api-01.dev.bantenprov.go.id/docs/satu-data)
--->
 ## Penyiapan alat
 
 Untuk dapat menggunakan *build system*, Anda membutuhkan kode sumber dan Node. Ikuti langkah-langkah di bawah ini:
