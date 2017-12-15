@@ -1,0 +1,323 @@
+[
+  {
+    "type": "get",
+    "url": "/dokter/:id",
+    "title": "Get   Detail Dokter",
+    "name": "GetDokter",
+    "group": "Dokter",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Dokter unique ID.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Array",
+            "optional": false,
+            "field": "result",
+            "description": "<p>Server response data.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n{\n   \"data\": {\n       \"id\": 10,\n       \"name\": \"R. Meliala, SpA\",\n       \"email\": \"meliala@gmail.com\",\n       \"photo\": \"15114151326942.png\",\n       \"data\": {\n           \"dokter\": {\n               \"id\": 2,\n               \"user_id\": 10,\n               \"about\": \"\",\n               \"nidn\": \"ID1071513353\",\n               \"spesialis\": 1,\n               \"pendidikan\": \"\",\n               \"phone\": \"081218643619\",\n               \"alamat\": \"\",\n               \"created_at\": \"2017-11-23 05:32:12\",\n               \"updated_at\": \"2017-12-03 22:13:05\",\n               \"visit\": 2,\n               \"id_player\": \"\"\n           }\n       }\n   }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "DataNotFound",
+            "description": "<p>The <code>id</code> of the ID Dokter was not found.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n  \"error\": \"DataNotFound\"\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n  \"result\": null\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "source/yankes/api-src/yankes.js",
+    "groupTitle": "Dokter"
+  },
+  {
+    "type": "get",
+    "url": "/dokter",
+    "title": "Data Dokter",
+    "name": "getAllDokter",
+    "group": "Dokter",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Array",
+            "optional": false,
+            "field": "result",
+            "description": "<p>Server response data.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n    {\n   \"data\": [\n       {\n           \"type\": null,\n           \"id\": \"9\",\n           \"attributes\": {\n               \"name\": \"Rachmat Sadeli, SpA\",\n               \"email\": \"rachmat@gmail.com\",\n               \"photo\": \"15114144716916.jpg\",\n               \"data\": {\n                   \"dokter\": {\n                       \"id\": 1,\n                       \"user_id\": 9,\n                       \"about\": \"\",\n                       \"nidn\": \"ID0971513353\",\n                       \"spesialis\": 1,\n                       \"pendidikan\": \"\",\n                       \"phone\": \"081212131415\",\n                       \"alamat\": \"\",\n                       \"created_at\": \"2017-11-23 05:21:12\",\n                       \"updated_at\": \"2017-12-04 11:33:39\",\n                       \"visit\": 6,\n                       \"id_player\": \"\"\n                   }\n               }\n           }\n       },\n       {\n           \"type\": null,\n           \"id\": \"10\",\n           \"attributes\": {\n               \"name\": \"R. Meliala, SpA\",\n               \"email\": \"meliala@gmail.com\",\n               \"photo\": \"15114151326942.png\",\n               \"data\": {\n                   \"dokter\": {\n                       \"id\": 2,\n                       \"user_id\": 10,\n                       \"about\": \"\",\n                       \"nidn\": \"ID1071513353\",\n                       \"spesialis\": 1,\n                       \"pendidikan\": \"\",\n                       \"phone\": \"081218643619\",\n                       \"alamat\": \"\",\n                       \"created_at\": \"2017-11-23 05:32:12\",\n                       \"updated_at\": \"2017-12-03 22:13:05\",\n                       \"visit\": 2,\n                       \"id_player\": \"\"\n                   }\n               }\n           }\n       }\n   ],\n   \"meta\": {\n       \"pagination\": {\n           \"total\": 6,\n           \"count\": 2,\n           \"per_page\": 2,\n           \"current_page\": 1,\n           \"total_pages\": 3\n       }\n   },\n   \"links\": {\n       \"self\": \"/dokter?page=1\",\n       \"first\": \"/dokter?page=1\",\n       \"next\": \"/dokter?page=2\",\n       \"last\": \"/dokter?page=3\"\n  }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "source/yankes/api-src/yankes.js",
+    "groupTitle": "Dokter"
+  },
+  {
+    "type": "get",
+    "url": "/kamar/:id",
+    "title": "Get   Detail Kamar Inap",
+    "name": "GetKamarInap",
+    "group": "Kamar_Inap",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Rumah Sakit unique ID.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Array",
+            "optional": false,
+            "field": "result",
+            "description": "<p>Server response data.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n{\n   \"data\": {\n       \"id\": 4,\n       \"rumahsakit\": \"RSIA Budi Asih Serang\",\n       \"photo\": \"15112358959310.JPG\",\n       \"kode\": \"0470R001\",\n       \"kategori\": \"RSIA\",\n       \"grade\": \"B\",\n       \"alamat\": \"Jl. KH. Sokhari No. 39 kec.Serang\",\n       \"kab_kot\": \"Serang\",\n       \"kodepos\": \"42117\",\n       \"total_bed\": 8,\n       \"bed_terpakai\": 3,\n       \"bed_kosong\": 5,\n       \"rawat_inap\": {\n           \"kamar\": [\n               {\n                   \"status\": 0,\n                   \"id\": 17,\n                   \"ruang_id\": 8,\n                   \"kode_bed\": \"VVIP\",\n                   \"created_by\": 14,\n                   \"created_at\": \"2017-11-23 06:00:21\",\n                   \"updated_at\": \"2017-11-23 06:30:39\",\n                   \"nama_kelas\": \"VVIP\",\n                   \"nama_ruang\": \"R. VVIP\"\n               },\n               {\n                   \"status\": 1,\n                   \"id\": 18,\n                   \"ruang_id\": 8,\n                   \"kode_bed\": \"VVIP\",\n                   \"created_by\": 14,\n                   \"created_at\": \"2017-11-23 06:29:50\",\n                   \"updated_at\": \"2017-11-23 06:30:33\",\n                   \"nama_kelas\": \"VVIP\",\n                   \"nama_ruang\": \"R. VVIP\"\n               },\n               {\n                   \"status\": 0,\n                   \"id\": 19,\n                   \"ruang_id\": 10,\n                   \"kode_bed\": \"R. VIP\",\n                   \"created_by\": 14,\n                   \"created_at\": \"2017-11-23 06:31:05\",\n                   \"updated_at\": \"2017-11-23 06:31:05\",\n                   \"nama_kelas\": \"VIP\",\n                   \"nama_ruang\": \"R. VIP\"\n               },\n               {\n                   \"status\": 0,\n                   \"id\": 20,\n                   \"ruang_id\": 10,\n                   \"kode_bed\": \"R. VIP\",\n                   \"created_by\": 14,\n                   \"created_at\": \"2017-11-23 06:31:16\",\n                   \"updated_at\": \"2017-11-23 06:31:16\",\n                   \"nama_kelas\": \"VIP\",\n                   \"nama_ruang\": \"R. VIP\"\n               },\n               {\n                   \"status\": 1,\n                   \"id\": 21,\n                   \"ruang_id\": 12,\n                   \"kode_bed\": \"R.K.I\",\n                   \"created_by\": 14,\n                   \"created_at\": \"2017-11-23 06:31:29\",\n                   \"updated_at\": \"2017-11-23 06:31:54\",\n                   \"nama_kelas\": \"R.K.I\",\n                   \"nama_ruang\": \"R.K.I\"\n               },\n               {\n                   \"status\": 0,\n                   \"id\": 22,\n                   \"ruang_id\": 13,\n                   \"kode_bed\": \"R.K.II\",\n                   \"created_by\": 14,\n                   \"created_at\": \"2017-11-23 06:31:48\",\n                   \"updated_at\": \"2017-11-23 06:31:48\",\n                   \"nama_kelas\": \"R.K.II\",\n                   \"nama_ruang\": \"R.K.II\"\n               },\n               {\n                   \"status\": 0,\n                   \"id\": 23,\n                   \"ruang_id\": 14,\n                   \"kode_bed\": \"R.K.III\",\n                   \"created_by\": 14,\n                   \"created_at\": \"2017-11-23 06:32:59\",\n                   \"updated_at\": \"2017-11-23 06:32:59\",\n                   \"nama_kelas\": \"R.K.III\",\n                   \"nama_ruang\": \"R.K.III\"\n               },\n               {\n                   \"status\": 1,\n                   \"id\": 24,\n                   \"ruang_id\": 14,\n                   \"kode_bed\": \"R.K.III\",\n                   \"created_by\": 14,\n                   \"created_at\": \"2017-11-23 06:33:07\",\n                   \"updated_at\": \"2017-11-23 06:33:15\",\n                   \"nama_kelas\": \"R.K.III\",\n                   \"nama_ruang\": \"R.K.III\"\n               }\n           ]\n       }\n   }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "DataNotFound",
+            "description": "<p>The <code>id</code> of the ID Rumah Sakit was not found.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n  \"error\": \"DataNotFound\"\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n  \"result\": null\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "source/yankes/api-src/yankes.js",
+    "groupTitle": "Kamar_Inap"
+  },
+  {
+    "type": "get",
+    "url": "/kamar",
+    "title": "Data Rumah Sakit",
+    "name": "getAllKamarInap",
+    "group": "Kamar_Inap",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Array",
+            "optional": false,
+            "field": "result",
+            "description": "<p>Server response data.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n    {\n   \"data\": [\n       {\n           \"type\": null,\n           \"id\": \"4\",\n           \"attributes\": {\n               \"rumahsakit\": \"RSIA Budi Asih Serang\",\n               \"photo\": \"15112358959310.JPG\",\n               \"kode\": \"0470R001\",\n               \"kategori\": \"RSIA\",\n               \"grade\": \"B\",\n               \"alamat\": \"Jl. KH. Sokhari No. 39 kec.Serang\",\n               \"kab_kot\": \"Serang\",\n               \"kodepos\": \"42117\",\n               \"total_bed\": 8,\n               \"bed_terpakai\": 3,\n               \"bed_kosong\": 5,\n               \"rawat_inap\": {\n                   \"kamar\": [\n                       {\n                           \"status\": 0,\n                           \"id\": 17,\n                           \"ruang_id\": 8,\n                           \"kode_bed\": \"VVIP\",\n                           \"created_by\": 14,\n                           \"created_at\": \"2017-11-23 06:00:21\",\n                           \"updated_at\": \"2017-11-23 06:30:39\",\n                           \"nama_kelas\": \"VVIP\",\n                           \"nama_ruang\": \"R. VVIP\"\n                       },\n                       {\n                           \"status\": 1,\n                           \"id\": 18,\n                           \"ruang_id\": 8,\n                           \"kode_bed\": \"VVIP\",\n                           \"created_by\": 14,\n                           \"created_at\": \"2017-11-23 06:29:50\",\n                           \"updated_at\": \"2017-11-23 06:30:33\",\n                           \"nama_kelas\": \"VVIP\",\n                           \"nama_ruang\": \"R. VVIP\"\n                       },\n                       {\n                           \"status\": 0,\n                           \"id\": 19,\n                           \"ruang_id\": 10,\n                           \"kode_bed\": \"R. VIP\",\n                           \"created_by\": 14,\n                           \"created_at\": \"2017-11-23 06:31:05\",\n                           \"updated_at\": \"2017-11-23 06:31:05\",\n                           \"nama_kelas\": \"VIP\",\n                           \"nama_ruang\": \"R. VIP\"\n                       },\n                       {\n                           \"status\": 0,\n                           \"id\": 20,\n                           \"ruang_id\": 10,\n                           \"kode_bed\": \"R. VIP\",\n                           \"created_by\": 14,\n                           \"created_at\": \"2017-11-23 06:31:16\",\n                           \"updated_at\": \"2017-11-23 06:31:16\",\n                           \"nama_kelas\": \"VIP\",\n                           \"nama_ruang\": \"R. VIP\"\n                       },\n                       {\n                           \"status\": 1,\n                           \"id\": 21,\n                           \"ruang_id\": 12,\n                           \"kode_bed\": \"R.K.I\",\n                           \"created_by\": 14,\n                           \"created_at\": \"2017-11-23 06:31:29\",\n                           \"updated_at\": \"2017-11-23 06:31:54\",\n                           \"nama_kelas\": \"R.K.I\",\n                           \"nama_ruang\": \"R.K.I\"\n                       },\n                       {\n                           \"status\": 0,\n                           \"id\": 22,\n                           \"ruang_id\": 13,\n                           \"kode_bed\": \"R.K.II\",\n                           \"created_by\": 14,\n                           \"created_at\": \"2017-11-23 06:31:48\",\n                           \"updated_at\": \"2017-11-23 06:31:48\",\n                           \"nama_kelas\": \"R.K.II\",\n                           \"nama_ruang\": \"R.K.II\"\n                       },\n                       {\n                           \"status\": 0,\n                           \"id\": 23,\n                           \"ruang_id\": 14,\n                           \"kode_bed\": \"R.K.III\",\n                           \"created_by\": 14,\n                           \"created_at\": \"2017-11-23 06:32:59\",\n                           \"updated_at\": \"2017-11-23 06:32:59\",\n                           \"nama_kelas\": \"R.K.III\",\n                           \"nama_ruang\": \"R.K.III\"\n                       },\n                       {\n                           \"status\": 1,\n                           \"id\": 24,\n                           \"ruang_id\": 14,\n                           \"kode_bed\": \"R.K.III\",\n                           \"created_by\": 14,\n                           \"created_at\": \"2017-11-23 06:33:07\",\n                           \"updated_at\": \"2017-11-23 06:33:15\",\n                           \"nama_kelas\": \"R.K.III\",\n                           \"nama_ruang\": \"R.K.III\"\n                       }\n                   ]\n               }\n           }\n       }\n   ],\n   \"meta\": {\n       \"pagination\": {\n           \"total\": 4,\n           \"count\": 2,\n           \"per_page\": 2,\n           \"current_page\": 1,\n           \"total_pages\": 2\n       }\n   },\n   \"links\": {\n       \"self\": \"/kamar?page=1\",\n       \"first\": \"/kamar?page=1\",\n       \"next\": \"/kamar?page=2\",\n       \"last\": \"/kamar?page=2\"\n   }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "source/yankes/api-src/yankes.js",
+    "groupTitle": "Kamar_Inap"
+  },
+  {
+    "type": "get",
+    "url": "/faskes/:id",
+    "title": "Get   Detail Rumah Sakit",
+    "name": "GetRumahsakit",
+    "group": "Rumah_Sakit",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Rumah Sakit unique ID.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Array",
+            "optional": false,
+            "field": "result",
+            "description": "<p>Server response data.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n{\n   \"data\": {\n       \"id\": 5,\n       \"rumah_sakit\": \"RS Sari Asih Serang\",\n       \"kode_rs\": \"0222R004\",\n       \"jenis\": \"RSU\",\n       \"kelas\": \"B\",\n       \"direktur\": \"-----\",\n       \"alamat\": \"Jl. Jendral Sudirman No. 38, Penancangan, Cipocok Jaya,\",\n       \"kab_kot\": \"Serang Banten\",\n       \"kode_pos\": \"42124\",\n       \"telp\": \"(0254) 220022\",\n       \"fax\": \"(0254) 220022\",\n       \"website\": \"https://www.sariasih.com\",\n       \"terdaftar\": \"2 weeks ago\"\n   }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "DataNotFound",
+            "description": "<p>The <code>id</code> of the ID Rumah Sakit was not found.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n  \"error\": \"DataNotFound\"\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n  \"result\": null\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "source/yankes/api-src/yankes.js",
+    "groupTitle": "Rumah_Sakit"
+  },
+  {
+    "type": "get",
+    "url": "/faskes",
+    "title": "Data Rumah Sakit",
+    "name": "getAllRumahsakit",
+    "group": "Rumah_Sakit",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Array",
+            "optional": false,
+            "field": "result",
+            "description": "<p>Server response data.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n    {\n  \"data\": [\n      {\n           \"type\": null,\n           \"id\": \"4\",\n           \"attributes\": {\n               \"rumah_sakit\": \"RSIA Budi Asih Serang\",\n               \"kode_rs\": \"0470R001\",\n               \"jenis\": \"RSIA\",\n               \"kelas\": \"B\",\n               \"direktur\": \"----\",\n               \"alamat\": \"Jl. KH. Sokhari No. 39 kec.Serang\",\n               \"kab_kot\": \"Serang\",\n               \"kode_pos\": \"42117\",\n               \"telp\": \"(0254) 212484\",\n               \"fax\": \"(0254) 212484\",\n               \"website\": \"http://rsiabudiasih.co.id\",\n               \"terdaftar\": \"2 weeks ago\"\n           }\n       },\n       {\n           \"type\": null,\n           \"id\": \"5\",\n           \"attributes\": {\n               \"rumah_sakit\": \"RS Sari Asih Serang\",\n               \"kode_rs\": \"0222R004\",\n               \"jenis\": \"RSU\",\n               \"kelas\": \"B\",\n               \"direktur\": \"-----\",\n               \"alamat\": \"Jl. Jendral Sudirman No. 38, Penancangan, Cipocok Jaya,\",\n               \"kab_kot\": \"Serang Banten\",\n               \"kode_pos\": \"42124\",\n               \"telp\": \"(0254) 220022\",\n               \"fax\": \"(0254) 220022\",\n               \"website\": \"https://www.sariasih.com\",\n               \"terdaftar\": \"2 weeks ago\"\n           }\n       }\n   ],\n   \"meta\": {\n       \"pagination\": {\n           \"total\": 4,\n           \"count\": 2,\n           \"per_page\": 2,\n           \"current_page\": 1,\n           \"total_pages\": 2\n       }\n   },\n   \"links\": {\n       \"self\": \"/faskes?page=1\",\n       \"first\": \"/faskes?page=1\",\n       \"next\": \"/faskes?page=2\",\n       \"last\": \"/faskes?page=2\"\n  }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "source/yankes/api-src/yankes.js",
+    "groupTitle": "Rumah_Sakit"
+  },
+  {
+    "type": "get",
+    "url": "/yankes",
+    "title": "Get Yankes",
+    "name": "GetYankes",
+    "group": "Yankes",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Array",
+            "optional": false,
+            "field": "result",
+            "description": "<p>Server response data.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n{\n    \"data\": {\n        \"rumahsakit\": 4,\n        \"dokter\": 6,\n        \"bed\": 21,\n        \"bed_terpakai\": 3,\n        \"bed_kosong\": 18\n    }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "source/yankes/api-src/yankes.js",
+    "groupTitle": "Yankes"
+  }
+]

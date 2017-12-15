@@ -1,9 +1,0 @@
-{
-  "name": "Api Yankes v1",
-  "version": "0.1.0",
-  "description": "Api Dokumentasi http://yankes-01.dev.bantenprov.go.id",
-  "template": {
-    "withCompare": false,
-    "withGenerator": false
-  }
-}

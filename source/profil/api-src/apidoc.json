@@ -1,0 +1,9 @@
+{
+  "name": "Profil API",
+  "version": "0.1.0",
+  "description": "API ini masih dalam tahap pengembangan.",
+  "url": "http://profil-01.dev.bantenprov.com/api/v1",
+  "template": {
+    "withCompare": false
+  }
+}
