@@ -13,7 +13,7 @@ Dokumentasi API Pemerintah Provinsi Banten.
 [otorisasi-api]: http://api-01.dev.bantenprov.go.id/docs/otorisasi
 [satu-data-api]: http://api-01.dev.bantenprov.go.id/docs/satu-data
 
-1. [Profil API][profil-api]
+1. Profil API
 2. [Dashboard API][dashboard-api]
 3. [Yankes API][yankes-api]
 4. Simpeg API
