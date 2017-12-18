@@ -1,10 +1,118 @@
 define({ "api": [
   {
     "type": "get",
+    "url": "/role/:id",
+    "title": "Request Role information",
+    "name": "GetRole",
+    "group": "Role",
+    "version": "1.0.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Roles unique ID.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "id",
+            "description": "<p>ID of the Role.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "name",
+            "description": "<p>Name of the Role.</p>"
+          }
+        ]
+      }
+    },
+    "filename": "source/otorisasi/api-src/otorisasi.js",
+    "groupTitle": "Role"
+  },
+  {
+    "type": "post",
+    "url": "/advantrust/role/",
+    "title": "",
+    "name": "PostRole",
+    "group": "Role",
+    "version": "1.0.0",
+    "header": {
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"Accept-Encoding\": \"Accept-Encoding: gzip, deflate\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "firstname",
+            "description": "<p>Optional Firstname of the User.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "lastname",
+            "description": "<p>Mandatory Lastname.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "country",
+            "defaultValue": "DE",
+            "description": "<p>Mandatory with default value &quot;DE&quot;.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": true,
+            "field": "age",
+            "defaultValue": "18",
+            "description": "<p>Optional Age with default 18.</p>"
+          }
+        ],
+        "Login": [
+          {
+            "group": "Login",
+            "type": "String",
+            "optional": false,
+            "field": "pass",
+            "description": "<p>Only logged in users can post this. In generated documentation a separate &quot;Login&quot; Block will be generated.</p>"
+          }
+        ]
+      }
+    },
+    "filename": "source/otorisasi/api-src/otorisasi.js",
+    "groupTitle": "Role"
+  },
+  {
+    "type": "get",
     "url": "/user/:id",
     "title": "Request User information",
     "name": "GetUser",
     "group": "User",
+    "version": "1.0.0",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -38,7 +146,6 @@ define({ "api": [
         ]
       }
     },
-    "version": "0.0.0",
     "filename": "source/otorisasi/api-src/otorisasi.js",
     "groupTitle": "User"
   }
