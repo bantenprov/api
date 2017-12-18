@@ -21,8 +21,9 @@
     "build-profil": "apidoc -i source/profil/api-src -o dist/docs/profil -t source/profil/template",
     "build-yankes": "apidoc -i source/yankes/api-src -o dist/docs/yankes -t source/yankes/template",
     "build-satu-data": "apidoc -i source/satu-data/api-src -o dist/docs/satu-data -t source/satu-data/template",
+    "build-otorisasi": "apidoc -i source/otorisasi/api-src -o dist/docs/otorisasi -t source/otorisasi/template",
     "build-index": "copyfiles -f source/index.html dist/docs",
-    "build": "npm-run-all test build-dashboard build-profil build-yankes build-satu-data build-index",
+    "build": "npm-run-all test build-*",
     "update-lodash": "./node_modules/lodash-cli/bin/lodash -p -o template/vendor/lodash.custom.min.js include=groupBy,each,extend,some exports=amd"
   },
   "keywords": [
