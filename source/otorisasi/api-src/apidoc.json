@@ -2,7 +2,7 @@
   "name": "Otorisasi API",
   "version": "0.1.0",
   "description": "API untuk otorisasi (Role) pada aplikasi Pemerintah Provinsi Banten.",
-  "url": "http://profil-01.dev.bantenprov.com/api/v1",
+  "url": "http://otorisasi-01.dev.bantenprov.go.id/api/v1",
   "template": {
     "withCompare": false
   }
