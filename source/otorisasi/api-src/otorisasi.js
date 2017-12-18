@@ -30,7 +30,7 @@
  */
 
 /**
- * @api {post} /advantrust/role/
+ * @api {post} /advantrust/role/ Request role submission
  * @apiName PostRole
  * @apiGroup Role
  * @apiVersion 1.0.0
