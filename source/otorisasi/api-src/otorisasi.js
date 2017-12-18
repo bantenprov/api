@@ -8,6 +8,13 @@
  *
  * @apiSuccess {String} firstname Firstname of the User.
  * @apiSuccess {String} lastname  Lastname of the User.
+ *
+ ^ * @api {get} /user/:id
+ * @apiErrorUser {json} Error-Response:
+ *     HTTP/1.1 404 Not Found
+ *     {
+ *       "error": "UserNotFound"
+ *     }
  */
 
 /**
@@ -27,7 +34,11 @@
  * @apiName PostRole
  * @apiGroup Role
  * @apiVersion 1.0.0
- * 
+ * @apiDescription API POST Role.
+ * Untuk dapat menggunakan POST methos.
+ * Anda harus menghibungi administrator
+ * untuk mendapatkan informasi lengkap.
+ *
  * @apiHeaderExample {json} Header-Example:
  *     {
  *       "Accept-Encoding": "Accept-Encoding: gzip, deflate"
@@ -44,7 +55,7 @@
 
 
 /**
- * @api {get} /permission/:id Request Role information
+ * @api {get} /permission/:id Request Permission information
  * @apiName GetRole
  * @apiGroup Permission
  * @apiVersion 1.0.0
