@@ -20,7 +20,7 @@ Dokumentasi API Pemerintah Provinsi Banten.
 5. Simbada API
 6. SOP Online API
 7. Otorisasi API
-8. Satu Data API
+8. [Satu Data API][satu-data-api]
 
 ## Penyiapan alat
 
