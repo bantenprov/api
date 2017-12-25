@@ -1,6 +1,49 @@
 define({ "api": [
   {
     "type": "get",
+    "url": "/permission/:id",
+    "title": "Request Permission information",
+    "name": "GetRole",
+    "group": "Permission",
+    "version": "1.0.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Roles unique ID.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "id",
+            "description": "<p>ID of the Permission.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "name",
+            "description": "<p>Name of the Permission.</p>"
+          }
+        ]
+      }
+    },
+    "filename": "source/otorisasi/api-src/otorisasi.js",
+    "groupTitle": "Permission"
+  },
+  {
+    "type": "get",
     "url": "/role/:id",
     "title": "Request Role information",
     "name": "GetRole",
@@ -44,11 +87,76 @@ define({ "api": [
   },
   {
     "type": "post",
-    "url": "/advantrust/role/",
+    "url": "/advantrust/permission/",
     "title": "",
+    "name": "PostPermission",
+    "group": "Role",
+    "version": "1.0.0",
+    "header": {
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"Accept-Encoding\": \"Accept-Encoding: gzip, deflate\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "firstname",
+            "description": "<p>Optional Firstname of the User.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "lastname",
+            "description": "<p>Mandatory Lastname.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "country",
+            "defaultValue": "DE",
+            "description": "<p>Mandatory with default value &quot;DE&quot;.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": true,
+            "field": "age",
+            "defaultValue": "18",
+            "description": "<p>Optional Age with default 18.</p>"
+          }
+        ],
+        "Login": [
+          {
+            "group": "Login",
+            "type": "String",
+            "optional": false,
+            "field": "pass",
+            "description": "<p>Only logged in users can post this. In generated documentation a separate &quot;Login&quot; Block will be generated.</p>"
+          }
+        ]
+      }
+    },
+    "filename": "source/otorisasi/api-src/otorisasi.js",
+    "groupTitle": "Role"
+  },
+  {
+    "type": "post",
+    "url": "/advantrust/role/",
+    "title": "Request role submission",
     "name": "PostRole",
     "group": "Role",
     "version": "1.0.0",
+    "description": "<p>API POST Role. Untuk dapat menggunakan POST methos. Anda harus menghibungi administrator untuk mendapatkan informasi lengkap.</p>",
     "header": {
       "examples": [
         {
@@ -141,7 +249,7 @@ define({ "api": [
             "type": "String",
             "optional": false,
             "field": "lastname",
-            "description": "<p>Lastname of the User.</p>"
+            "description": "<p>Lastname of the User.</p> <p>^ * @api {get} /user/:id</p>"
           }
         ]
       }

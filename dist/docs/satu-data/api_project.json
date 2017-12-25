@@ -1,8 +1,8 @@
 {
-  "name": "Otorisasi API",
+  "name": "Satu Data API",
   "version": "0.1.0",
-  "description": "API untuk otorisasi (Role) pada aplikasi Pemerintah Provinsi Banten.",
-  "url": "http://otorisasi-01.dev.bantenprov.go.id/api/v1",
+  "description": "API ini masih dalam tahap pengembangan.",
+  "url": "http://satudata-01.dev.bantenprov.go.id/api/v1",
   "template": {
     "withCompare": false
   },
@@ -11,7 +11,7 @@
   "apidoc": "0.3.0",
   "generator": {
     "name": "apidoc",
-    "time": "2017-12-25T18:33:21.687Z",
+    "time": "2017-12-25T18:33:20.500Z",
     "url": "http://apidocjs.com",
     "version": "0.17.6"
   }
